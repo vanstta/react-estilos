@@ -19,8 +19,8 @@ const Carrito = () => {
             <div className='contenedor-productos'>
             <img className='img-carrito' src={imgProducto1} alt="" />
             <div className='datos-productos'> 
-                <p>{productosCarrito[0]?.name}</p>
-                <span className='precio'>${precio} x {productosCarrito.length} =</span> <span className='total-precio'>${total} </span>
+                <p className='producto-en-carrito'>{productosCarrito[0]?.name}</p>
+                <span className='precio'>${precio}.00 x {productosCarrito.length} =</span> <span className='total-precio'>${total}.00 </span>
                 <button className='delete' onClick={()=>dispatch(eliminarDelCarrito     (productosCarrito))}> <img src={delete1} alt="" /></button>
               
             <div className="btn-contenedor">
@@ -40,7 +40,7 @@ const Carrito = () => {
     return  (
         <div className='carrito-contenedor'>
             <h3>Cart</h3>
-            <hr />
+            <hr className='hr-carrito'/>
             {mostrarProductos(productosCarrito)}
         </div>
     )  

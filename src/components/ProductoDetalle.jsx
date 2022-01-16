@@ -29,12 +29,13 @@ const ProductoDetalle = () => {
             <Carrousel/>
             <div className='contenedor-texto'>
                 <h4 className='marca'>{info.brand}</h4>
-                <h2>{info.name}</h2>
-                <p>{info.description}</p>
-                <div className='peu'>
-                <span className='precio-con-descuento'>${info.price * info.discount}</span> <span className='descuento'>{100* info.discount} %</span>
-                <p className='item-precio'>${info.price}</p>
+                <h2 className='nombre-producto'>{info.name}</h2>
+                <p className='descripcion'>{info.description}</p>
+                <div className='precios'>
+                <span className='precio-con-descuento'>${info.price * info.discount}.00</span>
+                <span className='descuento'>{100* info.discount} %</span>
                 </div>
+                <p className='item-precio'>${info.price}.00</p>
                 <div>
 
                     <Contador initial={1} />

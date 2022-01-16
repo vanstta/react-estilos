@@ -17,6 +17,11 @@ body {
   height: 50px;
 }
 
+.hr-nav {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 25px;
+}
 .menu {
  
   display: flex;
@@ -59,6 +64,7 @@ body {
 
 /* DETALLE PRODUCTO */
 .contenedor-detalle {
+  align-items: center;
   margin-top: 80px;
   display: flex;
   width: 70%;
@@ -68,35 +74,66 @@ body {
 }
 
 .contenedor-texto {
-  
   width: 40%;
 }
 
 .producto1 {
   width: 400px;
   height: 400px;
+  border-radius: 12px;
 }
 
 .item-precio {
   text-decoration: line-through;
+  color: rgb(129, 129, 129);
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .marca {
   color: #FF7E1B;
   text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bolder;
 }
 
 .descuento {
-  background-color:#fdb985 ;
-  padding-left: 5px;
-  padding-right: 5px;
+  background-color:#fadec8 ;
+  padding: 3px 5px 3px 5px;
   font-size: 14px;
+  color: #FF7E1B;
+  font-weight: 900;
+  border-radius: 3px;
+  position: relative;
+  bottom: 3px;
+}
+
+.precios {
+  
+  align-items: center;
 }
 
 .precio-con-descuento {
-  margin-left: 30px;
+  font-size: 21px;
+  font-weight: bolder;
+  margin-right: 12px;
 }
 
+.nombre-producto {
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.descripcion {
+  color: rgb(151, 151, 151);
+  font-size: 12px;
+  font-weight: 700;
+  width: 90%;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
 /* 
 CONTADOR ITEMS */
 
@@ -156,13 +193,6 @@ CONTADOR ITEMS */
   cursor: pointer;
 }
 
-.carrito button {
-  background-color: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-  
-}
 
 /* CARRITO */
 
@@ -202,23 +232,26 @@ CONTADOR ITEMS */
 
 .btn-carito {
   margin: 15 px 30 px 0 0 ;
- 
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
 }
 
-.contenedor-productos p, span {
+.contenedor-productos p, .contenedor-productos span {
   position: relative;
   right: 35px;
-  font-weight: 600;
-  color: rgb(126, 123, 123);
-}
-
-.contenedor-productos p {
-  font-size: 10px;
   
 }
 
+.producto-en-carrito, .precio {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgb(126, 123, 123);
+}
+
 .contenedor-productos span {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .carrito-vacio {
@@ -235,7 +268,7 @@ CONTADOR ITEMS */
 }
 
 .total-precio {
-  font-weight: 700;
+  font-weight: 900;
   color: black;
 }
 
@@ -244,7 +277,7 @@ CONTADOR ITEMS */
 
 }
 
-button.checkout {
+.checkout {
   
   height: 45px;
   width: 230px;
@@ -265,11 +298,12 @@ button.checkout {
   justify-content: center;
 }
 
-button.delete {
+.delete {
   background-color: transparent;
   position: absolute;
-  right: 0px;
+  right: 5px;
   top: 60px;
+  border: none;
 }
 
 .contador-carrito {
@@ -289,10 +323,17 @@ button.delete {
   
 }
 
+hr {
+  border: 1px solid rgb(218, 218, 218);
+  
+}
+
 /* CARROUSEL */
 
  .carrousel-img {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
+   margin-top: 20px;
+  border-radius: 12px;
+  width: 80px;
+  height: 80px;
+  margin-right: calc(80px/3);
 }

@@ -8,7 +8,6 @@ import {
   Route
 } from 'react-router-dom';
 import Navbar from "./components/Navbar";
-import Carrito from "./components/Carrito";
 
 
 function App() {
@@ -18,18 +17,12 @@ function App() {
   return ( 
   <Provider store={store}>
     <Router>
-      <div>
       <Navbar/>
-     {
-       
-     }
-      <hr />
-      <Switch>
-   
+      <hr className="hr-nav" />
+    <Switch>
      <ProductoDetalle/>
-   
     </Switch>
-    </div>
+    
     </Router>
     </Provider>
   );

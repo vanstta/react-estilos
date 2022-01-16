@@ -25,9 +25,9 @@ const botonCarrito = () => {
                
                 <NavLink className='nav-link' to='/collection'>Collections</NavLink>     
               
-                <NavLink className='nav-link' to='/man' exact>Man</NavLink>
+                <NavLink className='nav-link' to='/man' exact>Men</NavLink>
 
-                <NavLink className='nav-link' to='/woman' exact>Woman</NavLink>
+                <NavLink className='nav-link' to='/woman' exact>Women</NavLink>
               
                 <NavLink className='nav-link' to='/about' exact>About</NavLink>
 
