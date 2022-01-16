@@ -43,7 +43,7 @@ export const Contador=({ initial}) => {
     <div className='btn' >
       <div className="botones-contador ">
         <button className="dec" disabled={count<=0} onClick={decrementar}> <img src={restar} alt="" /> </button>
-        <div>{count}</div>
+        <div className='cantidad'>{count}</div>
         <button className="inc" disabled={count>9}  onClick={incrementar}> <img src={sumar} alt="" /> </button>
       </div>
       <div>

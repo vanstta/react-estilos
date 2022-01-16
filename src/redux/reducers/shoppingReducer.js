@@ -8,8 +8,8 @@ productosAgregados: []
 
 
 export function shoppingReducer(state=carritoInicial, action) {
-    console.log('action', action.payload)
-    switch (action.type) {
+   
+    switch(action.type) {
         case TYPES.AGREGAR_AL_CARRITO : {
             return {...state, productosAgregados: action.payload}
         }

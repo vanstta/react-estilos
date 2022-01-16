@@ -31,12 +31,15 @@ const ProductoDetalle = () => {
                 <h4 className='marca'>{info.brand}</h4>
                 <h2 className='nombre-producto'>{info.name}</h2>
                 <p className='descripcion'>{info.description}</p>
+                <div>
+                <div className='precios-mb'>
                 <div className='precios'>
                 <span className='precio-con-descuento'>${info.price * info.discount}.00</span>
                 <span className='descuento'>{100* info.discount} %</span>
                 </div>
                 <p className='item-precio'>${info.price}.00</p>
-                <div>
+               
+                </div>
 
                     <Contador initial={1} />
 

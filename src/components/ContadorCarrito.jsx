@@ -4,7 +4,6 @@ import {useSelector} from 'react-redux'
 const ContadorCarrito = () => {
     const productosCarrito = useSelector (state=> state.carrito.productosAgregados)
     const cantidad = productosCarrito.length
-    console.log('es', cantidad)
     return cantidad !==0 ?  (
         <div className='contador-carrito '>
         {

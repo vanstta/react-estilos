@@ -26,7 +26,6 @@ const Carrito = () => {
             <div className="btn-contenedor">
                 <button className='checkout'>Checkout</button></div>
             </div>
-           
         </div>
         )
         }else {
@@ -38,10 +37,13 @@ const Carrito = () => {
     }
  
     return  (
+        
         <div className='carrito-contenedor'>
+            
             <h3>Cart</h3>
             <hr className='hr-carrito'/>
             {mostrarProductos(productosCarrito)}
+       
         </div>
     )  
 
